@@ -1,16 +1,15 @@
 {
-  "name": "kata-types-modules",
-  "version": "2.0.1",
-  "description": "Kata for datatypes, functions and modules",
+  "name": "Generative art",
+  "version": "1.0.0",
+  "description": "Generative art made for ElysiumTitans NFT project",
   "scripts": {
     "test": "jest --watchAll --noStackTrace",
     "lint": "eslint ."
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dev-academy-challenges/kata-types-modules.git"
+    "type": "git"
   },
-  "author": "EDA",
+  "author": "Nicolas",
   "license": "ISC",
   "eslintConfig": {
     "extends": "eda"
