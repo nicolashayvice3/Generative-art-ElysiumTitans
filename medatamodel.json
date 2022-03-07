@@ -1,0 +1,39 @@
+{
+	"721": {
+		"testpolicyid": {
+			"ElysiumTitan000000": {
+				"attributes": {
+					"Armour Colour": "Silver / Blue",
+					"Armour Name": "The Dwarf's Gift",
+					"Beard Style": "Unkempt",
+					"Crown / Hair": "Poseidon's Gift",
+					"Eye Markings": "Athena's Blessing",
+					"God": "Zeus",
+					"Hair Colour": "Chestnut Brown",
+					"Pantheon": "Greek",
+					"Skin Tone": "Umber",
+					"Weapon Colour": "None",
+					"Weapon Name": "None",
+					"Background": "Night Sky"
+				},
+				"description": "Elysium Titans",
+				"files": {
+					"mediaType": "image/png",
+					"name": "Elysium Titans #000000",
+					"src": "<ipfs_link>"
+				},
+				"image": "<ipfs_link>",
+				"links": {
+					"Discord": "https://discord.gg/gYgNcXz3Zc",
+					"Twitter": "https://twitter.com/ElysiumTitans",
+					"Website": "https://elysiumtitans.online/"
+				},
+				"mediaType": "image/png",
+				"name": "Elysium Titans #000000",
+				"seriesDescription": "",
+				"seriesName": "Elysium Titans"
+			}
+		}
+	},
+	"version": "1.0"
+}
