@@ -37,13 +37,16 @@ function buildImage2 () {
     }
     load()
 
-    setInterval(function(){
-        const path = "./final2.jpg";
-        try {
-            fs.unlinkSync(path);
-            console.log("File removed:", path);
-        } catch (err) {
-        console.error(err);
+    setTimeout(function(){
+        for (let i = 2; i < 7; i++) {
+            console.log(i)
+            let path = `./final${i}.jpg`
+            try {
+                fs.unlinkSync(path);
+                console.log("File removed:", path);
+            } catch (err) {
+            console.error(err);
+            }    
         }
     },5000);
 }
