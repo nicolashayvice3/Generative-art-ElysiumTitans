@@ -1,5 +1,5 @@
 const fs = require('fs')
-const http = require('http')
+// const http = require('http')
 const sharp = require('sharp')
 
 function buildImage2 () {
