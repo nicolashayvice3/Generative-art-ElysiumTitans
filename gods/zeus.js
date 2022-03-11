@@ -1,18 +1,5 @@
 const generateNumber = require('generateNumber')
 
-const zeusCombinations = {
-  background: 0,
-  skinTone: 0,
-  weaponName: 0,
-  weaponColour: 0,
-  hairColour: 0,
-  hairStyle: 0,
-  beardStyle: 0,
-  armourName: 0,
-  armourColour: 0,
-  eyeMarkings: 0
-}
-
 const zeusPathToStoreFinal = './final-images/zeus-final'
 const zeusPathToImages = './images/ZEUS'
 const zeusLayers = 10
@@ -24,9 +11,9 @@ const normalBackgroundOptions = 6
 const normalVariationOptions = 5
 // const rareTraitsAllocation = 2
 
-function generateZeusCombinations (zeusCombinations) {
+function generateZeusCombinations (combinations) {
   const combinationCount = 20
-  const zeusCombinations = []
+  const combinations = []
   for (let i = 0; i < combinationCount; i++) {
     const thisCombo = {
       background: generateNumber(normalBackgroundOptions),
@@ -40,18 +27,18 @@ function generateZeusCombinations (zeusCombinations) {
       armourColour: generateNumber(normalVariationOptions),
       eyeMarkings: generateNumber(normalVariationOptions)
     }
-    const checkComboExists = checkIfZeusCombinationExists(zeusCombinations, thisCombo)
+    const checkComboExists = checkIfZeusCombinationExists(combinations, thisCombo)
     if (checkComboExists === 'not exists') {
-      zeusCombinations.push(thisCombo)
+      combinations.push(thisCombo)
     } else if (checkComboExists === 'exists') {
       console.log('Duplicate found and discarded')
     }
   }
 }
 
-function checkIfZeusCombinationExists (zeusCombinations, thisCombo) {
-  for (let i = 0; i < zeusCombinations.length; i++) {
-    if (zeusCombinations[i] === thisCombo) {
+function checkIfZeusCombinationExists (combinations, thisCombo) {
+  for (let i = 0; i < combinations.length; i++) {
+    if (combinations[i] === thisCombo) {
       return 'exists'
     }
   }
