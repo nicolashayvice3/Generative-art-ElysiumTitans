@@ -1,4 +1,4 @@
-const generateNumber = require('generateNumber')
+// const generateNumber = require('../index/generateNumber')
 
 const zeusPathToStoreFinal = './final-images/zeus-final'
 const zeusPathToImages = './images/ZEUS'
@@ -9,10 +9,15 @@ const rareImagesBackground = 5
 const rareBackgroundCount = 20
 const normalBackgroundOptions = 6
 const normalVariationOptions = 5
+const combinationCount = 20
 // const rareTraitsAllocation = 2
 
-function generateZeusCombinations (combinations) {
-  const combinationCount = 20
+function generateNumber (number) {
+  const chosenNumber = Math.floor(Math.random() * number)
+  return chosenNumber + 1
+}
+
+function generateZeusCombinations (combinationCount) {
   const combinations = []
   for (let i = 0; i < combinationCount; i++) {
     const thisCombo = {
@@ -34,6 +39,7 @@ function generateZeusCombinations (combinations) {
       console.log('Duplicate found and discarded')
     }
   }
+  return combinations
 }
 
 function checkIfZeusCombinationExists (combinations, thisCombo) {
@@ -43,4 +49,8 @@ function checkIfZeusCombinationExists (combinations, thisCombo) {
     }
   }
   return 'not exists'
+}
+
+module.exports = {
+  generateZeusCombinations
 }

@@ -43,13 +43,13 @@ function buildImage2 () {
   }, 5000)
 }
 
-function generateNumber (number) {
-  const chosenNumber = Math.floor(Math.random() * number)
-  return chosenNumber + 1
-}
+// function generateNumber (number) {
+//   const chosenNumber = Math.floor(Math.random() * number)
+//   return chosenNumber + 1
+// }
 
 buildImage2()
 
-module.exports = {
-  generateNumber
-}
+// module.exports = {
+//   generateNumber
+// }
