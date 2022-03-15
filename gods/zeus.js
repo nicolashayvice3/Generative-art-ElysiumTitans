@@ -52,5 +52,6 @@ function checkIfZeusCombinationExists (combinations, thisCombo) {
 }
 
 module.exports = {
-  generateZeusCombinations
+  generateZeusCombinations,
+  generateNumber
 }
