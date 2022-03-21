@@ -1,5 +1,4 @@
 const fs = require('fs')
-// const http = require('http')
 const sharp = require('sharp')
 
 function buildImage2 () {
@@ -10,7 +9,7 @@ function buildImage2 () {
     }])
     .toFile('final2.jpg', console.log('image generated'))
 
-  const timer = ms => new Promise(res => setTimeout(res, ms))
+  const timer = ms => new Promise(resolve => setTimeout(resolve, ms))
 
   async function load () {
     for (let i = 2; i < array.length; i++) {
