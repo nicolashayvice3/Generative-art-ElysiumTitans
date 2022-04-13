@@ -1,5 +1,3 @@
-// const generateNumber = require('../index/generateNumber')
-
 const zeusPathToStoreFinal = './final-images/zeus-final'
 const zeusPathToImages = './images/ZEUS'
 const zeusLayers = 10
